@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Inter";
+  src:
+    local("InterRegular"),
+    url("Inter-Regular.ttf") format("ttf")
+}
+
+body {
+  background-color: #eef;
+  margin: 0px;
+  font-family: InterRegular;
+}
+
+header {
+  background-color: #dde;
+  width: 100%;
+  display: flex;
+}
+
+button {
+  border-style: none;
+  font-family: inherit;
+  transition: 0.1s;
+}
+
+.headerButton {
+  width: 12.5vw;
+  height: calc(30px + 1vw);
+  font-size: calc(8px + 0.5vw);
+  background-color: #dde;
+}
+
+.headerButton:hover {
+  background-color: #bbc;
+}
+
+.big {
+  text-align: center;
+  font-size: calc(40px + 3vw);
+  margin: 0px;
+}
+
+.downloadButton {
+  background-color: #bbc;
+  font-size: calc(30px + 1vw);
+  margin: calc(2px + 0.5vw);
+  padding: 5px;
+  transition: 0.05s;
+}
+
+.downloadButton:hover {
+  background-color: #99a;
+}
+
+#downloads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadImage {
+  width: calc(20px + 0.8vw);
+  height: calc(20px + 0.8vw);
+  object-fit: scale-down;
+  position: relative;
+  margin-top: 5%
+}
