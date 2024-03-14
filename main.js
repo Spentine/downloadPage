@@ -1,5 +1,10 @@
 'use strict'
 
+/*
+  Created by Spentine
+  2024.3.13
+*/
+
 function download(url, name) {
   fetch(url) // url
     .then(resp => resp.status === 200 ? resp.blob() : Promise.reject('something went wrong'))
