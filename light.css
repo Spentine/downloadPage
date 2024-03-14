@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "Inter";
+  font-family: "InterRegular";
   src:
     local("InterRegular"),
-    url("Inter-Regular.ttf") format("ttf")
+    url("Inter-Regular.ttf");
 }
 
 body {
@@ -71,4 +71,23 @@ button {
   position: relative;
   margin-top: 5%;
   filter: invert(0%) sepia(13%) saturate(1534%) hue-rotate(331deg) brightness(100%) contrast(87%); /* #111 */
+}
+
+.description {
+  color: inherit;
+  margin-left: calc(15px + 1vw);
+  margin-right: calc(15px + 1vw);
+  font-size: calc(20px + 0.2vw);
+}
+
+.long {
+  display: block;
+  content: "";
+  margin-top: calc(100px + 3vw);
+}
+
+.short {
+  display: block;
+  content: "";
+  margin-top: calc(50px + 1vw);
 }
