@@ -1,3 +1,100 @@
+@font-face {
+  font-family: "InterRegular";
+  src:
+    local("InterRegular"),
+    url("Inter-Regular.ttf");
+}
+
 body {
-  background-color: #131820;
+  background-color: #1a1c20;
+  margin: 0px;
+  font-family: InterRegular;
+  color: #eee;
+}
+
+header {
+  background-color: #20252a;
+  width: 100%;
+  display: flex;
+}
+
+button {
+  border-style: none;
+  font-family: inherit;
+  transition: 0.1s;
+  color: inherit;
+}
+
+.headerButton {
+  width: 100%;
+  height: calc(30px + 1vw);
+  font-size: calc(8px + 0.5vw);
+  background-color: #20252a;
+  color: #ddd;
+}
+
+.headerButton:hover {
+  background-color: #456;
+}
+
+.big {
+  text-align: center;
+  font-size: calc(40px + 3vw);
+  margin: 0px;
+  color: inherit;
+}
+
+.medium {
+  text-align: center;
+  font-size: calc(30px + 2vw);
+  margin: 0px;
+  color: inherit;
+}
+
+.downloadButton {
+  background-color: #303840;
+  font-size: calc(30px + 1vw);
+  margin: calc(2px + 0.5vw);
+  padding: 5px;
+  transition: 0.05s;
+}
+
+.downloadButton:hover {
+  background-color: #567;
+}
+
+#downloads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hex Color to CSS Filter https://isotropic.co/tool/hex-color-to-css-filter/ */
+
+.downloadImage {
+  width: calc(20px + 0.8vw);
+  height: calc(20px + 0.8vw);
+  object-fit: scale-down;
+  position: relative;
+  margin-top: 5%;
+  filter: invert(100%) sepia(0%) saturate(4767%) hue-rotate(44deg) brightness(123%) contrast(76%); /* #eee */
+}
+
+.description {
+  color: inherit;
+  margin-left: calc(15px + 1vw);
+  margin-right: calc(15px + 1vw);
+  font-size: calc(20px + 0.2vw);
+}
+
+.long {
+  display: block;
+  content: "";
+  margin-top: calc(100px + 3vw);
+}
+
+.short {
+  display: block;
+  content: "";
+  margin-top: calc(50px + 1vw);
 }

@@ -9,6 +9,7 @@ body {
   background-color: #eef;
   margin: 0px;
   font-family: InterRegular;
+  color: #111;
 }
 
 header {
@@ -21,13 +22,15 @@ button {
   border-style: none;
   font-family: inherit;
   transition: 0.1s;
+  color: inherit;
 }
 
 .headerButton {
-  width: 12.5vw;
+  width: 100%;
   height: calc(30px + 1vw);
   font-size: calc(8px + 0.5vw);
   background-color: #dde;
+  color: #333;
 }
 
 .headerButton:hover {
@@ -38,6 +41,7 @@ button {
   text-align: center;
   font-size: calc(40px + 3vw);
   margin: 0px;
+  color: inherit;
 }
 
 .downloadButton {
@@ -58,10 +62,13 @@ button {
   align-items: center;
 }
 
+/* Hex Color to CSS Filter https://isotropic.co/tool/hex-color-to-css-filter/ */
+
 .downloadImage {
   width: calc(20px + 0.8vw);
   height: calc(20px + 0.8vw);
   object-fit: scale-down;
   position: relative;
-  margin-top: 5%
+  margin-top: 5%;
+  filter: invert(0%) sepia(13%) saturate(1534%) hue-rotate(331deg) brightness(100%) contrast(87%); /* #111 */
 }
